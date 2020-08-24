@@ -1,0 +1,23 @@
+questions = ['2,4,6,8,10,__','6,9,12,15,__','2,3,5,7,__','2,4,8,__','10,30,50,70,__','4,9,16,__','5,25,125,__','12,14,16,18,__','1,11,111,__','1,2,4,7,_']
+answers = [12,18,11,16,90,25,625,20,1111,11]
+def start_game():
+  score = 0
+  for i in range(10):
+    print('you are in Level:',i+1,'Question is')
+    print(questions[i])
+    print('Enter your answer:')
+    ans = int(input())
+    if(ans==answers[i]):
+      score += 10
+  print('Congratulations you have completed all the levels.')
+  print('Your Score is : ',score,'/100')
+  print('Thanks for playing the Game,Have a Nice Day!!') 
+print('***GUESS THE NEXT!!***' )
+print('Hello, Player')
+print('Welcome to the Game!!')
+print('Here are the rules,please go through them \n 1.This game is to find next number in series .\n 2.There are 10 levels in this game.\n 3.Each level has one question\n 4. After answering all the question you can go to the next.\n 5. Total Score is given at the end of game.\n Press s to start the game.') 
+choice = input()
+if(choice=='s' or choice=='S'):
+  start_game()
+else:
+  print('Ok,Catch you Later!!')     
