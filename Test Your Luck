@@ -1,0 +1,26 @@
+import random
+def start_game():
+  count=0
+  for i in range(3):
+    print(' Chance:',i+1,'I thought a number,try to guess it ')
+    guess=int(input())
+    c=random.choice([1,2,3,4,5,6,7,8,9]) 
+    if(guess == c):
+      print('Your guess is correct ')
+      count+=1
+    else:
+      print('Your guess is incorrect ') 
+  #print(count)
+  if(count>0):
+    print('Hooray!!You won the game.' )    
+  else:
+    print('Better Luck Next Time.')  
+print('***TEST YOUR LUCK!!***')
+print('Hello, Player')
+print('Welcome to the Game!!')
+print('Here are the rules,please go through them \n1.This is a simple number guessig game.\n2. You will be given 3 chances and you have to guess a number between 1 to 9.\n3.If your number matches the number that system thinks for 1 or more times you will win the game.\n Press s to start the game.') 
+choice = input()
+if(choice=='s' or choice=='S'):
+  start_game()
+else:
+  print('Ok,Catch you Later!!') 
