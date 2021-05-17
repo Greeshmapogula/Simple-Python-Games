@@ -8,5 +8,7 @@ Here are the links to play them.
 2. **Test your Luck:** https://repl.it/@greeshmapogula/TEST-YOUR-LUCK#main.py
 
 
-Edit: Links are not working now : )
+Edit: Links are not working now : ), they expired.
+
+
  
